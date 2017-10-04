@@ -1,0 +1,128 @@
+* {
+  max-height: 100vh;
+  max-width: 100vw;
+  font-family: 'Quicksand', sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: white;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+}
+
+#my-video {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  z-index: 100;
+}
+
+#goBack {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  display: inline-block;
+  color: white;
+  text-shadow: 0px 0px 20px black, 0px 0px 10px black;
+  align-content: center;
+  justify-content: center;
+  vertical-align: middle;
+  opacity: 0;
+  transition: .5s;
+  z-index: 9999;
+}
+
+#goBack .fa {
+  margin: 1em 0em 1em 1em;
+}
+
+#goBack h2 {
+  display: inline-block;
+  margin-left: .25em;
+  margin-right: 1em;
+  text-transform: uppercase;
+}
+
+.third {
+  height: 100%;
+  width: 33%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  transition: 1s;
+  background-size: cover;
+  background-position: bottom;
+  justify-content: center;
+  align-items: center;
+}
+
+#video1 {  background-image: url('../img/boatrace.jpg');  }
+#video2 {  background-image: url('../img/hoote.jpg');  }
+#video3 {  background-image: url('../img/boatrace.jpg');  }
+
+.content {
+  margin: 0 auto;
+  position: absolute;
+  top: 10%;
+  width: inherit;
+  background-color: rgba(0,0,0,.75);
+  align-content: center;
+  text-align: center;
+  opacity: 1;
+  transition: opacity .5s;
+  transition-delay: .5s;
+}
+
+.sizeRestrict {
+  width: 33vw;
+  font-size: .75em;
+  margin: 0 auto;
+  display: block;
+}
+
+.content > .sizeRestrict > * {
+  margin: 1em;
+  padding: 0 2em;
+}
+
+.vidButton {
+  font-size: 1.5em;
+  background-color: rgba(0,0,0,0);
+  padding: 3em 3em;
+  border: none;
+  color: white;
+}
+
+#vidPlayer1 {
+  display:none;
+}
+
+#vidPlayer2 {
+  display:none;
+}
+
+#vidPlayer3 {
+  display:none;
+}
+
+#player {
+  position: fixed;
+}
